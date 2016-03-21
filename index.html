@@ -8,7 +8,27 @@
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
 
-  <link rel="stylesheet" href="http://cdn.foundation5.zurb.com/foundation.css">
+  <link rel="stylesheet" href="http://cdn.foundation5.zurb.com/foundation.css">  
+
+  <style>
+    .columns, .column {
+      background: red;
+      min-height: 33vw;
+      border: solid white 2px;
+      padding: 4rem;
+      font-size: 7.5rem;
+      text-align: center;
+    }
+
+    .board{
+      margin-top: calc(((100vh - 100vw) / 2) - 2.75rem);
+    }
+
+    h1{
+      top: 0;
+      left: 0;
+    }
+  </style>
 
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -16,22 +36,26 @@
 </head>
 
 <body>
-  <div class="row">
-    <div class="small-4 columns"></div>
-    <div class="small-4 columns"></div>
-    <div class="small-4 columns"></div>
+
+  <h1>Tic-Tac-Toe</h1>
+
+  <div class="board">
+    <div class="row">
+      <div class="small-4 columns">O</div>
+      <div class="small-4 columns">X</div>
+      <div class="small-4 columns"></div>
+    </div>
+    <div class="row">
+      <div class="small-4 columns">O</div>
+      <div class="small-4 columns">X</div>
+      <div class="small-4 columns"></div>
+    </div>
+    <div class="row">
+      <div class="small-4 columns">O</div>
+      <div class="small-4 columns"></div>
+      <div class="small-4 columns"></div>
+    </div>
   </div>
-  <div class="row">
-    <div class="small-4 columns"></div>
-    <div class="small-4 columns"></div>
-    <div class="small-4 columns"></div>
-  </div>
-  <div class="row">
-    <div class="small-4 columns"></div>
-    <div class="small-4 columns"></div>
-    <div class="small-4 columns"></div>
-  </div>
-  <script src="js/scripts.js"></script>
-  <script src="https://code.jquery.com/jquery-2.2.2.min.js  integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="   crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
 </body>
 </html>

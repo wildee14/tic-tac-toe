@@ -6,7 +6,7 @@ var Board = require('./board.js');
 server.listen(8080);
 
 app.get('/', function (req, res) {
-  res.sendFile(__dirname + '/index.html');
+  res.sendFile('/home/k/kmdice/tic-tac-toe' + '/index.html');
 });
 
 var player_num = 0;
@@ -61,9 +61,5 @@ io.on('connection', function(socket) {
     });
   });
 
-  playerQueue.push(socket);
-
-  socket.on('disconnect', function(){
-  });
 
 });
